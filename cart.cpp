@@ -63,5 +63,37 @@ bool checkout(Cart &cart){
 
 int main(){
 
-  return 0;
+	char action;
+	Cart cart;
+
+	while(true){
+		cout<<"Select an action -  (a)dd item, (v)iew cart, (c)heckout" <<endl;
+		cin>> action;
+
+		if(action=='a'){
+			//Todo: Add to Cart 
+			// View All Products + Choose Product + Add to the Cart 
+			Product * product = chooseProduct();
+			if(product!=NULL){
+				cout<<"Added to the Cart "<<product->getDisplayName() <<endl;
+				cart.addProduct(*product);
+			}
+
+		}
+		else if(action=='v'){
+			// View the Cart
+			cout<<"------------------" <<endl;
+			cout << cart.viewCart();
+			cout<<"------------------"<<endl;
+		}
+		else{
+			// Checkout 
+			cart.viewCart();
+			if(checkout(cart)){
+				break;
+			}
+		}
+	}
+
+	return 0;
 }
