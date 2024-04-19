@@ -1,5 +1,5 @@
 
-# Shopping Cart- Backend
+# Shopping Cart - Backend
 
 This project primarily focuses on demonstrating basic object-oriented programming concepts and data structures in the context of a simple shopping cart program. It doesn't delve into more advanced features like inheritance, polymorphism, or exception handling, which are often covered in a more comprehensive introduction to OOP.
 
