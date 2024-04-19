@@ -24,3 +24,5 @@ The code is organized into three classes:
 • Item: Represents an item in the shopping cart, consisting of a product and its quantity.
 
 • Cart: Represents a shopping cart that can add products, calculate the total price, view the cart contents, and check out.
+
+## Screenshots
